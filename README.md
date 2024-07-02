@@ -27,8 +27,13 @@ This guide assumes that you have already installed both Keycloak and Nextcloud. 
 ### 1.2. Create a Client for Nextcloud
 
 1. In the **nextcloud** realm, go to **Clients** from the left sidebar and click on **Create**.
+
+![Screenshot](./Screenshots/createClient.png)
+
 2. Enter the following details:
-   - **Client ID**: `nextcloud`
-   - **Client Protocol**: OpenID Connect
-   - **Root URL**: `http://10.123.13.113/` (replace with your Nextcloud URL)
+
+- **Client ID**: `nextcloud`
+- **Client Protocol**: OpenID Connect
+- **Root URL**: `http://10.123.13.113/` (replace with your Nextcloud URL)
+
 3. Click **Save**.
