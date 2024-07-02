@@ -22,6 +22,8 @@ This guide assumes that you have already installed both Keycloak and Nextcloud. 
 2. On the left sidebar, click on **Realms** and select **Add Realm**.
 3. Enter the **Realm Name** (e.g., `company name`) and click **Create**.
 
+![Screenshot](./Screenshots/createRealm2.png)
+
 ### 1.2. Create a Client for Nextcloud
 
 1. In the **nextcloud** realm, go to **Clients** from the left sidebar and click on **Create**.
