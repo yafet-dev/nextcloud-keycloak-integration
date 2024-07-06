@@ -33,11 +33,11 @@ This guide assumes that you have already installed both Keycloak and Nextcloud. 
 2. Enter the following details:
 
 - **Client ID**: `my-nextcloud` (give any name)
-  ![Screenshot](./Screenshots/createId.png)
+  ![Screenshot](./Screenshots/ClientId.png)
 - **Client Protocol**: OpenID Connect
 - **client authentication**: On
 - **Implicit flow**: On
-  ![Screenshot](./Screenshots/clientSetting.png)
+  ![Screenshot](./Screenshots/ClientSetting.png)
 
 - **Root URL**: `your nextcloud url` (eg http://10.10.10.10/)
 
