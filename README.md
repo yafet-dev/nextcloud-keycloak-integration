@@ -56,6 +56,7 @@ This guide assumes that you have already installed both Keycloak and Nextcloud. 
 ### 2.1. Enable the Social Login App
 
 1. Log into Nextcloud as an admin.
-2. Go to **Apps** and search for "OpenID Connect."
    ![Screenshot](./Screenshots/nextCloud.png)
+2. Go to **Apps** and search for "OpenID Connect."
+
 3. Enable the **OpenID Connect** application.
