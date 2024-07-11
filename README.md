@@ -39,6 +39,23 @@ This guide assumes that you have already installed both Keycloak and Nextcloud. 
 - **Implicit flow**: On
   ![Screenshot](./Screenshots/ClientSetting.png)
 
-- **Root URL**: `your nextcloud url` (eg http://10.10.10.10/)
+- **Root URL**: `your nextcloud url` (eg https://fms.company.com)
+- **Valid redirect URIs**: `(eg https://fms.company.com/*)`
+- **Web Origins**: `your nextcloud url`
+  ![Screenshot](./Screenshots/rootURL.png)
 
 3. Click **Save**.
+
+### 1.3. Create Client Credentials
+
+1. Go to the **Credentials** tab of the client.
+2. Copy the **Client Secret** as you'll need it for the Nextcloud configuration.
+
+## Step 2: Configure Nextcloud
+
+### 2.1. Enable the Social Login App
+
+1. Log into Nextcloud as an admin.
+2. Go to **Apps** and search for "OpenID Connect."
+   ![Screenshot](./Screenshots/nextCloud.png)
+3. Enable the **OpenID Connect** application.
