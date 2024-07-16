@@ -62,3 +62,13 @@ This guide assumes that you have already installed both Keycloak and Nextcloud. 
 3. Download & Enable the **Social Login** application.
    ![Screenshot](./Screenshots/sociallogin.png)
    on your case it should say Download and enable.
+
+### 2.2. Configure SocialLogin in Nextcloud
+
+1. After enabling the app, go to **Administration Settings** > **Social Login**.
+   you should this a ui something similar to this
+   ![Screenshot](./Screenshots/SocialLoginSS.png)
+
+2. Adjust the settings as your need to connect with keycloak add the plug button on **Custom ID connect**:
+   ![Screenshot](./Screenshots/openid.png)
+3. Save the settings.
