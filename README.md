@@ -15,6 +15,8 @@ This guide assumes that you have already installed both Keycloak and Nextcloud. 
 ### 1.1. Create a Realm
 1. Log into Keycloak's Admin Console.
 
+![Uploading image.png…]()
+
 2. On the left sidebar, click on **Realms** and select **Add Realm**.
 3. Enter the **Realm Name** (e.g., `company name`) and click **Create**.
 
