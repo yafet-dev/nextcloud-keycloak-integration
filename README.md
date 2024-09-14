@@ -71,4 +71,5 @@ This guide assumes that you have already installed both Keycloak and Nextcloud. 
 
 2. Adjust the settings as your need to connect with keycloak add the plug button on **Custom ID connect**:
    ![Screenshot](./Screenshots/openid.png)
-3. Save the settings.
+
+### 2.2.1 Get details from keycloak
