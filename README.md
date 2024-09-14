@@ -79,3 +79,50 @@ This guide assumes that you have already installed both Keycloak and Nextcloud. 
 2. Select **OpenID Endpoint Configuration**. This will redirect you to an API page containing various configuration details.
 
 3. Copy the relevant information from the OpenID Connect endpoint and paste it into the corresponding fields in Nextcloud’s OpenID Connect settings.
+
+### 2.2.2 Configure OpenID Connect in Nextcloud
+
+When configuring the OpenID Connect settings in Nextcloud, you will need the following details from Keycloak:
+
+1. **Authorize URL**: This is the `authorization_endpoint` from Keycloak’s OpenID Endpoint Configuration. Copy the URL and paste it into the **Authorize URL** field in Nextcloud.
+
+2. **Token URL**: This is the `token_endpoint` from Keycloak’s OpenID Endpoint Configuration. Copy the URL and paste it into the **Token URL** field in Nextcloud.
+
+3. **Title**: This is the text that will appear on the login button (e.g., "Login with Keycloak"). You can enter any name you prefer here.
+
+4. **Client Secret**:
+   - Go back to Keycloak.
+   - Click on **Clients** from the left sidebar.
+   - Select the client you created for Nextcloud (e.g., `nextcloud`).
+   - Go to the **Credentials** tab.
+   - Copy the **Client Secret** and paste it into the **Client Secret** field in Nextcloud.
+
+After completing these steps, save the settings in Nextcloud.
+
+### 2.3 Test and Create a Keycloak User
+
+1. **Log out** of Nextcloud.
+2. On the login page, you should now see a button that says **Login with Keycloak**.
+   ![Screenshot](./Screenshots/Final.png)
+3. Click the button, but since there are no users in Keycloak yet, you won’t be able to log in.
+
+### 2.3.1 Create a User in Keycloak
+
+1. Go back to the **Keycloak Admin Console**.
+2. In the left sidebar, click on **Users**.
+3. Click the **Add User** button.
+4. Fill in the following fields:
+   - **Username**: Enter a unique username.
+   - **Email**: (Optional) Enter an email address.
+   - **First Name**: Enter the user’s first name.
+   - **Last Name**: Enter the user’s last name.
+5. Click **Save**.
+
+### 2.3.2 Set the User's Credentials
+
+1. After creating the user, go to the **Credentials** tab.
+2. Set a password for the user by entering it into the **New Password** and **Confirm Password** fields.
+3. Disable the **Temporary** option to allow the user to keep the password permanently.
+4. Click **Set Password**.
+
+Now the user is created, and you should be able to log in to Nextcloud using Keycloak.
