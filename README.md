@@ -63,13 +63,19 @@ This guide assumes that you have already installed both Keycloak and Nextcloud. 
    ![Screenshot](./Screenshots/sociallogin.png)
    on your case it should say Download and enable.
 
-### 2.2. Configure SocialLogin in Nextcloud
+### 2.2. Configure Social Login in Nextcloud
 
-1. After enabling the app, go to **Administration Settings** > **Social Login**.
-   you should this a ui something similar to this
+1. After enabling the app, navigate to **Administration Settings** > **Social Login**. You should see a UI similar to this:
    ![Screenshot](./Screenshots/SocialLoginSS.png)
 
-2. Adjust the settings as your need to connect with keycloak add the plug button on **Custom ID connect**:
+2. Adjust the settings as needed to connect with Keycloak. Add the **Custom OpenID Connect** option by clicking the **plug** button:
    ![Screenshot](./Screenshots/openid.png)
 
-### 2.2.1 Get details from keycloak
+### 2.2.1 Retrieve Details from Keycloak
+
+1. Go back to Keycloak and click on **Realm Settings**:
+   ![Screenshot](./Screenshots/RealmSetting.png)
+
+2. Select **OpenID Endpoint Configuration**. This will redirect you to an API page containing various configuration details.
+
+3. Copy the relevant information from the OpenID Connect endpoint and paste it into the corresponding fields in Nextcloud’s OpenID Connect settings.
