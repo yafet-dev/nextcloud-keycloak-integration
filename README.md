@@ -137,3 +137,56 @@ Now the user is created, and you should be able to log in to Nextcloud using Key
    - Set **quota limits**.
    - Assign the user to **groups**.
    - **Promote the user to admin** or control their permissions.
+
+### Mapping Existing Nextcloud Users with Keycloak for SSO
+
+If you already have an existing user in Nextcloud and want to map this user with Keycloak so they can log in using both the default Nextcloud login and Keycloak (SSO), follow these steps:
+
+---
+
+### 1. Log in with Your Existing Nextcloud Account
+
+1. Open your Nextcloud instance and **log in** using your default Nextcloud credentials (old account).
+2. After logging in, click on your **profile icon** at the top right and go to **Settings**.
+
+---
+
+### 2. Access the Social Login Settings
+
+1. In the settings menu, you should see a section called **Social Login** (this is available because the admin has installed the Social Login plugin).
+2. Click on **Social Login** to open its settings.
+   ![Screenshot](./Screenshots/Test.png)
+   You should now see a section titled **Available Providers** that lists all the SSO login providers available. This will include the provider you configured earlier (Keycloak).
+
+---
+
+### 3. Link Your Account with Keycloak
+
+1. In the **Available Providers** section, click on the SSO provider you created (e.g., **Keycloak**).
+   ![Screenshot](./Screenshots/UserSocial.png)
+2. You will be redirected to the Keycloak login page. Enter your **Keycloak credentials**.
+3. If the login is successful, your Nextcloud account will now be linked with Keycloak.
+
+---
+
+### 4. Verify Account Linking
+
+1. After successfully logging in with Keycloak, your Nextcloud account should now be mapped to your Keycloak account.
+2. You can verify this by logging out of Nextcloud and attempting to log in again using either:
+   - The default Nextcloud login (with your old credentials), or
+   - The **Login with Keycloak** option.
+
+In both cases, you should now have access to the same files and data within your Nextcloud account, regardless of whether you log in using Keycloak or the default Nextcloud login.
+
+---
+
+### Additional Management
+
+Once your account is linked:
+
+- You can manage user groups, quotas, and permissions as usual in the **Users** section.
+- The linked account will still retain its original Nextcloud credentials and settings while allowing access via the Keycloak SSO.
+
+---
+
+By following these steps, you will successfully map an existing Nextcloud user to Keycloak, enabling login through either the default Nextcloud login or Keycloak without losing access to any existing files or data.
