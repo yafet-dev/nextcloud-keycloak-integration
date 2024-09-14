@@ -190,3 +190,15 @@ Once your account is linked:
 ---
 
 By following these steps, you will successfully map an existing Nextcloud user to Keycloak, enabling login through either the default Nextcloud login or Keycloak without losing access to any existing files or data.
+
+### Challenges Faced
+
+When a Keycloak-authenticated user logs out, I encountered an issue where the user gets stuck on the **"You're logged out"** page instead of being redirected back to the login page. Despite following various online documentation and trying different solutions, I was unable to resolve this issue.
+
+![Screenshot](./Screenshots/Logout.png)
+
+If you manage to solve this problem, please let me know in the comments. Your help would be greatly appreciated! :)
+
+---
+
+By following these steps, you will successfully map an existing Nextcloud user to Keycloak, enabling login through either the default Nextcloud login or Keycloak without losing access to any existing files or data.
