@@ -122,7 +122,18 @@ After completing these steps, save the settings in Nextcloud.
 
 1. After creating the user, go to the **Credentials** tab.
 2. Set a password for the user by entering it into the **New Password** and **Confirm Password** fields.
-3. Disable the **Temporary** option to allow the user to keep the password permanently.
+3. Enable the **Temporary** option to since it's best practice for users to change their default password
 4. Click **Set Password**.
 
 Now the user is created, and you should be able to log in to Nextcloud using Keycloak.
+
+### 2.4 Manage Keycloak Users in Nextcloud
+
+1. After successfully logging in with Keycloak, **log out** and log back into your **Nextcloud admin account**.
+2. Navigate to **Users** from the admin panel.
+3. You should see the newly created user displayed here. Under the user's name, it will say "Keycloak".
+   ![Screenshot](./Screenshots/Users.png)
+4. You can manage the user just like any other Nextcloud user:
+   - Set **quota limits**.
+   - Assign the user to **groups**.
+   - **Promote the user to admin** or control their permissions.
